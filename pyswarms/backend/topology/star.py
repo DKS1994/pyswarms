@@ -68,8 +68,8 @@ class Star(Topology):
         else:
             return (best_pos, best_cost)
 
-    def update_velocity(self, swarm, clamp):
-        """Updates the velocity matrix
+    def compute_velocity(self, swarm, clamp):
+        """Computes the velocity matrix
 
         This method updates the velocity matrix using the best and current
         positions of the swarm. The velocity matrix is computed using the
@@ -134,7 +134,7 @@ class Star(Topology):
         else:
             return updated_velocity
 
-    def update_position(self, swarm, bounds):
+    def compute_position(self, swarm, bounds):
         """Updates the position matrix
 
         This method updates the position matrix given the current position and
