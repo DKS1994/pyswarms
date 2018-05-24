@@ -13,12 +13,12 @@ class Topology(object):
     def compute_gbest(self, swarm):
         """Computes the best particle of the swarm and returns the cost and
         position"""
-        raise NotImplementedError("Topology::compute_best_particle()")
+        raise NotImplementedError("Topology::compute_gbest()")
 
-    def update_position(self, swarm):
+    def compute_position(self, swarm):
         """Updates the swarm's position-matrix"""
-        raise NotImplementedError("Topology::update_position()")
+        raise NotImplementedError("Topology::compute_position()")
 
-    def update_velocity(self, swarm):
+    def compute_velocity(self, swarm):
         """Updates the swarm's velocity-matrix"""
-        raise NotImplementedError("Topology::update_velocity()")
+        raise NotImplementedError("Topology::compute_velocity()")
