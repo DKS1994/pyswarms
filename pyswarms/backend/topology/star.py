@@ -25,7 +25,7 @@ class Star(Topology):
     def __init__(self):
         super(Star, self).__init__()
 
-    def compute_best_particle(self, swarm):
+    def compute_gbest(self, swarm):
         """Obtains the global best cost and position based on a star topology
 
         This method takes the current pbest_pos and pbest_cost, then returns
