@@ -10,7 +10,7 @@ class Topology(object):
         """Initializes the class"""
         pass
 
-    def compute_best_particle(self, swarm):
+    def compute_gbest(self, swarm):
         """Computes the best particle of the swarm and returns the cost and
         position"""
         raise NotImplementedError("Topology::compute_best_particle()")
